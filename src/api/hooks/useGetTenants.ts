@@ -8,9 +8,6 @@ export const useGetTenants = () => {
     getTenantsListFn,
     {
       refetchOnMount: false,
-      onSuccess: (data) => {
-        console.log(data)
-      },
       onError: (e: any) => {
         console.log(e)
       },

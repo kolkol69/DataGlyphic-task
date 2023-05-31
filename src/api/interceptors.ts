@@ -2,7 +2,6 @@ import { AxiosError, AxiosInstance, AxiosResponse } from 'axios'
 
 const onRequest = (config: any): any => {
   const sessionId = localStorage.getItem('user')
-  console.log('sessionId', sessionId)
   if (sessionId && config.headers) {
     config.headers.sessionId = JSON.parse(sessionId)
   }

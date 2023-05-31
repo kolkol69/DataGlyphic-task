@@ -10,9 +10,6 @@ export const useGetTenantChart = () => {
     ['tenant/:id/chart', tenantId],
     async () => await getTenantChartFn(tenantId ?? ''),
     {
-      onSuccess(data) {
-        console.log(data)
-      },
       onError: (e: any) => {
         console.log(e)
       },

@@ -7,13 +7,11 @@ import { ChartContainer } from './Tenant.style'
 
 const Tenant = () => {
   const { tenantChart, isLoading } = useGetTenantChart()
-  const {
-    state: { tenantName },
-  } = useLocation()
+  const { state } = useLocation()
 
   return (
     <div>
-      <h1>{tenantName}</h1>
+      <h1>{state?.tenantName ?? 'Tenant Line Chart'}</h1>
       {isLoading ? (
         <LoadingSpinner />
       ) : (

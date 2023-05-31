@@ -1,7 +1,19 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+## Project structure
+```
+├── public/
+├── src/
+│   ├── api/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── apiClient.ts
+│   │   ├── interceptors.ts
+│   │   ├── types.ts
+│   ├── components/
+│   ├── hooks/
+│   ├── navigation/
+│   ├── views/
+│   ├── App.tsx
+```
 ## Available Scripts
 
 In the project directory, you can run:
